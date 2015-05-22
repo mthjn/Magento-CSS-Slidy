@@ -25,6 +25,10 @@ Flush the custom block in CMS .. **and**?
         { $myvar = Mage::getModel('Namespace_Module/Modelname');  
         
         ...  
+        
+        foreach $myvar do some HTML 
+        
+        ...
    ```
   
 ###Links   
