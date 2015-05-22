@@ -3,8 +3,65 @@
 // {{block type=""}}
 class CSSSlidy_Slider_Block_Render extends Mage_Core_Block_Template {
   public function _toHtml() { ?>
-    <?php //templating php in block? ?>
-    <div id="slidy-container" style="width: 100%; overflow: hidden;margin-top: -7px;">
+    <?php //templating php in block?
+    //this should be in app/design .../template along with the js.
+    // here shoudl be the way to get the LINKS ?>
+
+<?php //find all images in directory? ?>
+<?php
+//server path
+//echo Mage::getBaseDir('media');
+echo "<br><hr><br>";
+echo '<h1>Server</h1>';
+
+  $mydir = Mage::getBaseDir('media').DS."cssslidy".DS."slider";
+    echo $mydir;
+    var_dump(dir($mydir));
+
+    function dirFiles($directry)
+    {
+      $dir = dir($directry); //Open
+        while (false!== ($file = $dir->read()))
+        {
+  $xt = substr($file, strrpos($file, '.'));
+   if($xt == ".jpg" || $xt == ".jpeg" || $xt == ".png" |$xt == ".gif") {
+        $filesall[$file] = $file;
+      }
+          }
+      $dir->close(); // Close
+      asort($filesall); //
+        return $filesall;
+    }
+
+      $array = dirFiles($mydir);
+
+      foreach ($array as $key => $file)
+      {
+      echo $file; // Display Images
+      echo '<br />';
+      }
+
+  echo "<br><hr><br>";
+  echo '<h1>local</h1>';
+  $localmedia = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA)."cssslidy/slider/";
+  $source = $localmedia . '111.jpg';
+
+  $imgtitle = $this->getLayout()->getBlock('head')->getTitle();
+  $imgalt = $imgtitle . " Slider";?>
+   <img src="<?php echo $source; ?>" title="<?php echo $imgtitle; ?>" alt="<?php echo $imgalt; ?>">
+
+
+  <?php  //echo $medpath;
+  echo '<h1>both</h1>';
+  foreach ($array as $key => $file)
+  {
+  $sliderurl = $localmedia . $file;?>
+  <img src="<?php echo $sliderurl; ?>" title="<?php echo $imgtitle; ?>" alt="<?php echo $imgalt; ?>">
+  <?php  }
+
+?>
+<!-- for now -->
+<div id="slidy-container" style="width: 100%; overflow: hidden;margin-top: -7px;">
    <figure id="slidy">
     <img src="http://i1065.photobucket.com/albums/u381/jana2511/NL5/ipad-605439_1920_zpsb04bojgw.jpg" alt>
     <img src="http://i1065.photobucket.com/albums/u381/jana2511/NL5/MomPreneurs_virtuell_arbeiten_zpsusllhcnu.jpg" alt>
@@ -60,5 +117,5 @@ for (i=0;i<(imgCount-1); i++) {
   document.body.appendChild(css);
 }
 </script>
-  <?php}
+  <?php }
 }

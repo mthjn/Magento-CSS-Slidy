@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <cssslidy translate="label" module="customer">
+            <label>CSS Slidy</label>
+            <sort_order>1</sort_order>
+        </cssslidy>
+    </tabs>
+    <sections>
+            <cssslidyslider translate="label">
+                <label>CSSSlidy Slider</label>
+                <tab>cssslidy</tab>
+                <frontend_type>text</frontend_type>
+                <sort_order>1</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+
+                <groups>
+                    <mainoptions translate="label">
+                        <label>Main Options</label>
+                        <frontend_type>text</frontend_type>
+                        <sort_order>0</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                    </mainoptions>
+
+                    <slideritem1 translate="label">
+                        <label>Slider Item #1</label>
+                        <frontend_type>text</frontend_type>
+                        <sort_order>1</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <fields>
+                            <image translate="label comment">
+                                <label>Image</label>
+                                <comment>
+                                    <![CDATA[Upload an image from your computer]]>
+                                </comment>
+                                <frontend_type>image</frontend_type>
+                                <backend_model>adminhtml/system_config_backend_image</backend_model>
+                                <upload_dir config="system/filesystem/media" scope_info="1">cssslidy/slider</upload_dir>
+                                <base_url type="media" scope_info="1">cssslidy/slider</base_url>
+                                <sort_order>1</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+    						             </image>
+                        </fields>
+                    </slideritem1>
+                    <slideritem2 translate="label">
+                        <label>Slider Item #2</label>
+                        <frontend_type>text</frontend_type>
+                        <sort_order>2</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <fields>
+                            <image translate="label comment">
+                                <label>Image</label>
+                                <comment>
+                                    <![CDATA[Upload an image from your computer]]>
+                                </comment>
+                                <frontend_type>image</frontend_type>
+                                <backend_model>adminhtml/system_config_backend_image</backend_model>
+                                <upload_dir config="system/filesystem/media" scope_info="1">cssslidy/slider</upload_dir>
+                                <base_url type="media" scope_info="1">cssslidy/slider</base_url>
+                                <sort_order>1</sort_order>
+                                <show_in_default>1</show_in_default>
+                                <show_in_website>1</show_in_website>
+                                <show_in_store>1</show_in_store>
+    						             </image>
+                        </fields>
+                    </slideritem1>
+                  </groups>
+                </cssslidyslider>
+              </sections>
+          </config>
