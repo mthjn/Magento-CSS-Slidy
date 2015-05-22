@@ -11,9 +11,18 @@ Flush the custom block in CMS .. **and**?
   
 ###To be done  
 **remove the code from renderer and use the proper structure:**  
-+ create template and layout 
-+ create block for the css3 flush?  
-+ apply the main function into **model**/helper?  
++ *create template and layout* 
++ *create block for the css3 flush?*  
++ apply the main function into **model**  
+    extends Mage_Core_Model_Abstract  
++ create block to call this model  
+   \app\code\local\Namespace\Module\Block\Getimages.php:
+    class ... extends Mage_Core_Block_Template
+      { protected function _toHtml() { 
+        $myvar = Mage::getModel('Namespace_Module/Modelname');
+        ...
+
   
 ###Links   
 [CSSSlidy](http://dudleystorey.github.io/CSSslidy/)  
+[Docs Magento](http://docs.magentocommerce.com/)  
