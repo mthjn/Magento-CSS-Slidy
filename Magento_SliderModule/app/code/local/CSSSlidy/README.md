@@ -17,11 +17,11 @@ Flush the custom block in CMS .. **and**?
     extends Mage_Core_Model_Abstract  
 + create block to call this model  
    ```
-   \app\code\local\Namespace\Module\Block\Getimages.php:
-    class ... extends Mage_Core_Block_Template
-      { protected function _toHtml() { 
-        $myvar = Mage::getModel('Namespace_Module/Modelname');
-        ...
+   \app\code\local\Namespace\Module\Block\Getimages.php:  
+    class ... extends Mage_Core_Block_Template  
+      { protected function _toHtml() {   
+        $myvar = Mage::getModel('Namespace_Module/Modelname');  
+        ...  
    ```
   
 ###Links   
