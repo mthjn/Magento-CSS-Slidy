@@ -31,6 +31,8 @@ Flush the custom block in CMS .. **and**?
         ...
    ```
   
+  + Add the **model** into config.xml below blocks, the same structure.  
+    
 ###Links   
 [CSSSlidy](http://dudleystorey.github.io/CSSslidy/)  
 [Docs Magento](http://docs.magentocommerce.com/)  
