@@ -15,7 +15,5 @@ Flush the custom block in CMS .. **and**?
 + create block for the css3 flush?  
 + apply the main function into helper?  
   
-  
-  
-**Links**  
+###Links   
 [CSSSlidy](http://dudleystorey.github.io/CSSslidy/)  
