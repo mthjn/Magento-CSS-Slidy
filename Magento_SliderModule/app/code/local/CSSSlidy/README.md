@@ -13,7 +13,7 @@ Flush the custom block in CMS .. **and**?
 **remove the code from renderer and use the proper structure:**  
 + create template and layout 
 + create block for the css3 flush?  
-+ apply the main function into helper?  
++ apply the main function into **model**/helper?  
   
 ###Links   
 [CSSSlidy](http://dudleystorey.github.io/CSSslidy/)  
