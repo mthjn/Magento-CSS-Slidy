@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <CSSSlidy_Slider>
+            <version>0.1.0</version><!-- Version number of your module -->
+        </CSSSlidy_Slider>
+    </modules>
+    <frontend>
+        <routers>
+            <slider>
+                <use>standard</use>
+                <args>
+                    <module>CSSSlidy_Slider</module>
+                    <frontName>slider</frontName>
+                </args>
+            </slider>
+        </routers>
+    </frontend>
+    <global>
+      <blocks>
+        <CSSSlidy_Slider>
+          <class>CSSSlidy_Slider_Block</class>
+        </CSSSlidy_Slider>
+      </blocks>
+    </global>
+</config>
