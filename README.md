@@ -13,11 +13,11 @@ Flush this as a custom block in CMS .. **and**?
 
 ###Install  
 + Copy the files into your Magento backend  
-+ Load any amount of images **best if of the same size** into
++ Load any amount of images **best if of the same size** into  
     media/cssslidy/slider  
 + Change CSS for slider DIV in skin css, if needed  
-+ Display slider as a block in CMS pages
-    {{block type="CSSSlidy_Slider/render"}}   
++ Display slider as a block in CMS pages  
+    {{block type="CSSSlidy_Slider/render"}}
 
 ###To be done  
 + Some admin backend  
