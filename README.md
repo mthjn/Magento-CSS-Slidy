@@ -1,15 +1,21 @@
 ###Function  
 
+**All images in media/cssslidy/slider will be automatically added into slider**  
+
+eg  
 Get all base media url /cssslidy/slider  
 Get all filenames for some image extensions  
 Get public urls of all these and flush them into css div  
-
-eg all images in media/cssslidy/slider will be automatically added into slider
-
 Render the div with the links  
 append javascript to create the CSS3  
-Define a custom block for these  
-Flush the custom block in CMS .. **and**?  
+Flush this as a custom block in CMS .. **and**?  
+
+
+###Install  
++ Copy the files into your Magento backend  
++ Load any amount of images **best if of the same size** into
+    media/cssslidy/slider  
++ Display slider as a block in CMS pages  
   
 ###To be done  
 + Some admin backend  
@@ -22,7 +28,7 @@ Flush the custom block in CMS .. **and**?
     extends Mage_Core_Model_Abstract  
 + model called from **block** (PHP)
 
-###Based on
+###Based on / Links  
 
 [CSSSlidy](http://dudleystorey.github.io/CSSslidy/)  
 
