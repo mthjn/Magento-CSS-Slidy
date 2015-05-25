@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <cssslidy translate="label" module="customer">
+            <label>CSS Slidy</label>
+            <sort_order>1</sort_order>
+        </cssslidy>
+    </tabs>
+    <sections>
+            <cssslidyslider translate="label">
+                <label>CSSSlidy Slider</label>
+                <tab>cssslidy</tab>
+                <frontend_type>text</frontend_type>
+                <sort_order>1</sort_order>
+                <show_in_default>1</show_in_default>
+                <show_in_website>1</show_in_website>
+                <show_in_store>1</show_in_store>
+
+                <groups>
+                    <mainoptions translate="label">
+                        <label>CSS Slidy Captions Info</label>
+                        <frontend_type>text</frontend_type>
+                        <sort_order>0</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <comment>This will get you max 4 slides with text.Ordered by ABC.</comment>
+                    </mainoptions>
+                    <!-- group -->
+                    <slideritem1 translate="label">
+                        <label>Slider Item #1</label>
+                        <frontend_type>text</frontend_type>
+                        <sort_order>1</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+
+                        <fields><!-- field -->
+                          <caption1>
+                              <label>Caption</label>
+                              <frontend_type>text</frontend_type>
+                              <sort_order>1</sort_order>
+                              <show_in_default>1</show_in_default>
+                              <show_in_website>1</show_in_website>
+                              <show_in_store>1</show_in_store>
+                              <comment>Enter slider caption.</comment>
+                          </caption1>
+                        </fields>
+
+                    </slideritem1>
+
+
+                    <slideritem2 translate="label">
+                        <label>Slider Item #2</label>
+                        <frontend_type>text</frontend_type>
+                        <sort_order>2</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <fields>
+
+                          <caption2>
+                              <label>Caption</label>
+                              <frontend_type>text</frontend_type>
+                              <sort_order>1</sort_order>
+                              <show_in_default>1</show_in_default>
+                              <show_in_website>1</show_in_website>
+                              <show_in_store>1</show_in_store>
+                              <comment>Enter slider caption.</comment>
+                          </caption2>
+
+                        </fields>
+
+                    </slideritem2>
+
+                    <slideritem3 translate="label">
+                        <label>Slider Item #3</label>
+                        <frontend_type>text</frontend_type>
+                        <sort_order>3</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <fields>
+
+                          <caption3>
+                              <label>Caption</label>
+                              <frontend_type>text</frontend_type>
+                              <sort_order>1</sort_order>
+                              <show_in_default>1</show_in_default>
+                              <show_in_website>1</show_in_website>
+                              <show_in_store>1</show_in_store>
+                              <comment>Enter slider caption.</comment>
+                          </caption3>
+
+                        </fields>
+
+                    </slideritem3>
+
+                    <slideritem4 translate="label">
+                        <label>Slider Item #4</label>
+                        <frontend_type>text</frontend_type>
+                        <sort_order>4</sort_order>
+                        <show_in_default>1</show_in_default>
+                        <show_in_website>1</show_in_website>
+                        <show_in_store>1</show_in_store>
+                        <fields>
+
+                          <caption4>
+                              <label>Caption</label>
+                              <frontend_type>text</frontend_type>
+                              <sort_order>1</sort_order>
+                              <show_in_default>1</show_in_default>
+                              <show_in_website>1</show_in_website>
+                              <show_in_store>1</show_in_store>
+                              <comment>Enter slider caption.</comment>
+                          </caption4>
+
+                        </fields>
+
+                    </slideritem4>
+
+                  </groups>
+                </cssslidyslider>
+              </sections>
+          </config>

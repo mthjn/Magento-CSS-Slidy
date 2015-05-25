@@ -1,3 +1,19 @@
 #slidy-container {
-  margin-top: -7px;
+/*  margin-top: -7px;*/
+position:relative;
+width: 100%;
+overflow: hidden;
 }
+.cssslidy-caption {
+  float:left;
+  width:auto;
+  position: relative;
+  z-index: 999999;
+  font-size: 25px;
+  color: black;
+  transition: 0.5s ease;
+  top: 100px;
+  left: 0;
+  background: rgba(255,255,255,0.3);
+}
+/*transition: left 2s cubic-bezier(0.77, 0, 0.175, 1);*/

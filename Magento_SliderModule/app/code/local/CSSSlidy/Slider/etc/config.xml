@@ -24,6 +24,11 @@
         </layout>
     </frontend>
     <global>
+      <helpers><!-- new -->
+        <CSSSlidy_Slider>
+          <class>CSSSlidy_Slider_Helper</class>
+        </CSSSlidy_Slider>
+      </helpers>
       <blocks>
         <CSSSlidy_Slider>
           <class>CSSSlidy_Slider_Block</class>
@@ -33,6 +38,30 @@
         <CSSSlidy_Slider>
           <class>CSSSlidy_Slider_Model</class>
         </CSSSlidy_Slider>
+        <cssslidy><!-- new -->
+          <class>CSSSlidy_Slider_Model</class>
+        </cssslidy>
       </models>
     </global>
+    <adminhtml><!-- new -->
+        <acl><!-- auth only-->
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <cssslidyslider>
+                                            <title>CSSSlidy Options</title>
+                                        </cssslidyslider>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
 </config>
