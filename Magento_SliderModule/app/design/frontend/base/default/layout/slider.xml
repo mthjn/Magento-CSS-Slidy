@@ -1,0 +1,9 @@
+<layout version="0.1.0">
+    <default>
+        <reference name="before_body_end">
+          <block type="page/html_head" name="sliderjs" as="sliderjs" after="-">
+            <action method="addItem"><type>skin_js</type><name>js/cssslidy/slider/slider.js</name></action>
+          </block>
+        </reference>
+    </default>
+</layout>

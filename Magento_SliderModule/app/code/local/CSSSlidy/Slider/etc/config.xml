@@ -2,7 +2,7 @@
 <config>
     <modules>
         <CSSSlidy_Slider>
-            <version>0.1.0</version><!-- Version number of your module -->
+            <version>0.3.0</version>
         </CSSSlidy_Slider>
     </modules>
     <frontend>
@@ -15,6 +15,13 @@
                 </args>
             </slider>
         </routers>
+        <layout><!-- layout for JS in footer-->
+          <updates>
+              <slider>
+                  <file>slider.xml</file>
+              </slider>
+          </updates>
+        </layout>
     </frontend>
     <global>
       <blocks>
@@ -22,5 +29,10 @@
           <class>CSSSlidy_Slider_Block</class>
         </CSSSlidy_Slider>
       </blocks>
+      <models>
+        <CSSSlidy_Slider>
+          <class>CSSSlidy_Slider_Model</class>
+        </CSSSlidy_Slider>
+      </models>
     </global>
 </config>
