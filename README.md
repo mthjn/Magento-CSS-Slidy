@@ -15,8 +15,9 @@ Flush this as a custom block in CMS .. **and**?
 + Copy the files into your Magento backend  
 + Load any amount of images **best if of the same size** into
     media/cssslidy/slider  
++ Change CSS for slider DIV in skin css, if needed  
 + Display slider as a block in CMS pages  
-  
+
 ###To be done  
 + Some admin backend  
 + integration? only {{block}}?  
