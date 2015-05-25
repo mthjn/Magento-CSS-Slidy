@@ -4,6 +4,9 @@
           <block type="page/html_head" name="sliderjs" as="sliderjs" after="-">
             <action method="addItem"><type>skin_js</type><name>js/cssslidy/slider/slider.js</name></action>
           </block>
+          <block type="page/html_head" name="slidercss" as="slidercss" after="-">
+            <action method="addItem"><type>skin_css</type><name>css/cssslidy/slider/slider.css</name></action>
+          </block>
         </reference>
     </default>
 </layout>
