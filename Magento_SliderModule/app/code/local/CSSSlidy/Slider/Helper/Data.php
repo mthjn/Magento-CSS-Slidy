@@ -13,8 +13,10 @@ class CSSSlidy_Slider_Helper_Data extends Mage_Core_Helper_Abstract
        $captions[] = Mage::getStoreConfig($location);
      }
    $divcap = array();
+    $n = 1;
      foreach ($captions as $key => $value) {
-        $divcap[] = '<div class="cssslidy-caption">' . $value . '</div>';
+        $divcap[] = '<div class="cssslidy-caption' . $n . '">' . $value . '</div>';
+         $n++;
          }//feach
    return $divcap;
  }

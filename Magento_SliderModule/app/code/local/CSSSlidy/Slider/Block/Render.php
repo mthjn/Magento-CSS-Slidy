@@ -42,14 +42,16 @@ captions
          <figure id="slidy">
           <?php
              for ($i = 0 ; $i < $array_count; $i++) {?>
-
+                <div class="innerslidy">
                  <?php
-                 if (!empty($divcap[$i])) echo $divcap[$i];
-                 if (!empty($imgsrc[$i])) echo $imgsrc[$i];
+                  if (!empty($divcap[$i])) echo $divcap[$i];
+                  if (!empty($imgsrc[$i])) echo $imgsrc[$i];
                  ?>
-
+                </div>
             <?php }//for
+
             echo $divcap[0]; //1st slide appended for smooth inf roll
+
            ?>
            </figure>
        </div>
