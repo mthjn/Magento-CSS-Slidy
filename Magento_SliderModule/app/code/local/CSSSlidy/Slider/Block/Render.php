@@ -31,10 +31,8 @@ captions
 //print_r($imgsrc);
 //print_r($divcap);
 /**
-                caption and img    what if one empty
-                last image JS added image 1 BUT NO caption
+                what if one empty
                 Adds CSS3 Hover transitions for text
-                text on 4 rows because of figure
 **/
 /**Template Renderer**/
      ?>

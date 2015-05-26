@@ -8,10 +8,11 @@ transition: all 2s ease;
 .innerslidy {
   position:relative;
 }
-.cssslidy-caption1,
-.cssslidy-caption2,
-.cssslidy-caption3,
-.cssslidy-caption4  {
+
+#cssslidy-caption1,
+#cssslidy-caption2,
+#cssslidy-caption3,
+#cssslidy-caption4  {
   position:absolute;
   z-index: 999999;
   font-size: 25px;
@@ -22,9 +23,5 @@ transition: all 2s ease;
   transition: background-color 1s ease;
   transition: color 1s ease;
 }
-/*need to add this into the js generator*/
-.cssslidy-caption1 {left: 1%;}
-.cssslidy-caption2 {left: 21%;}
-.cssslidy-caption3 {left: 41%;}
-.cssslidy-caption4 {left: 61%;}
+
 /*transition: left 2s cubic-bezier(0.77, 0, 0.175, 1);*/
