@@ -12,18 +12,20 @@ Flush this as a custom block in CMS .. **and**?
 
 
 ###Install  
-+ Copy the files into your Magento backend  
-+ Load any amount of images **best if of the same size** into  
++ Copy the files into your Magento file system  
++ Load any amount of images **of the same size** into  
     media/cssslidy/slider  
++ Add text for sliders if needed: System - Configuration - CSSSlidy
 + Change CSS for slider DIV in skin css, if needed  
 + Display slider as a block in CMS pages  
     {{block type="CSSSlidy_Slider/render"}}
 
 ###To be done  
-+ Some admin backend  
 + integration? only {{block}}?  
++ Pictures via admin backend  
 
-###Log
+###Log  
++ Admin Backend  
 + *created template / block*  
 + *crerated layout to flush js into footer block*  
 + pic search in **model**  
