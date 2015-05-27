@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<config>
-    <modules>
-        <CSSSlidy_Slider>
-        <active>true</active>
-        <codePool>local</codePool>
-        </CSSSlidy_Slider>
-    </modules>
-</config>
