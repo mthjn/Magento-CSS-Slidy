@@ -17,7 +17,7 @@ class CSSSlidy_Slider_Helper_Data extends Mage_Core_Helper_Abstract
      foreach ($captions as $key => $value) {
         $divcap[] = '<div class="cpt" id="cssslidy-caption' . $n . '">' . $value . '</div>';
          $n++;
-         }//feach
+     }//feach
    return $divcap;
  }
 

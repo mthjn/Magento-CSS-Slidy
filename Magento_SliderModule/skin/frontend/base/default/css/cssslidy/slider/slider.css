@@ -1,5 +1,7 @@
+
+/*transition: left 2s cubic-bezier(0.77, 0, 0.175, 1);*/
+
 #slidy-container {
-/*  margin-top: -7px;*/
 position:relative;
 width: 100%;
 overflow: hidden;
@@ -8,7 +10,6 @@ transition: all 2s ease;
 .innerslidy {
   position:relative;
 }
-
 #cssslidy-caption1,
 #cssslidy-caption2,
 #cssslidy-caption3,
@@ -20,8 +21,33 @@ transition: all 2s ease;
   top: 30px;
   padding: 15px;
   background: rgba(255,255,255,0.3);
-  transition: background-color 1s ease;
+  transition: background-color 4s ease;
   transition: color 1s ease;
 }
+#cssslidy-caption1:hover,
+#cssslidy-caption2:hover,
+#cssslidy-caption3:hover,
+#cssslidy-caption4:hover{
+  background: rgba(255,255,255,0.2);
+  transition: background-color 4s ease;
+}
 
-/*transition: left 2s cubic-bezier(0.77, 0, 0.175, 1);*/
+
+@media(max-width:650px) {
+  #cssslidy-caption1,
+  #cssslidy-caption2,
+  #cssslidy-caption3,
+  #cssslidy-caption4 {
+    font-size: 20px;
+  }
+}
+
+
+@media(max-width:450px) {
+  #cssslidy-caption1,
+  #cssslidy-caption2,
+  #cssslidy-caption3,
+  #cssslidy-caption4 {
+    font-size: 14px;
+  }
+}

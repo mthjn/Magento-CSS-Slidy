@@ -24,7 +24,11 @@
                         <show_in_default>1</show_in_default>
                         <show_in_website>1</show_in_website>
                         <show_in_store>1</show_in_store>
-                        <comment>This will get you max 4 slides with text.Ordered by ABC.</comment>
+                        <comment>This will get you max 4 slides with text.
+                          Feel free to use HTML though you might have to change the skin CSS as well.
+                          Images are ordered by ABC and get loaded automatically as you upload them into media/cssslidy/slider.
+                          Leave the respective fields blank if your slider has less that 4 images or if you simply want to skip caption.
+                        </comment>
                     </mainoptions>
                     <!-- group -->
                     <slideritem1 translate="label">

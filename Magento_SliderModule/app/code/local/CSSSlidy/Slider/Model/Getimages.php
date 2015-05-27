@@ -1,6 +1,7 @@
-<?php //Model Slider
-// Get all images in dir
-// Get server path
+<?php
+
+
+
 class CSSSlidy_Slider_Model_Getimages extends Mage_Core_Model_Abstract {
 
 
@@ -33,6 +34,20 @@ class CSSSlidy_Slider_Model_Getimages extends Mage_Core_Model_Abstract {
     return $path;
   }
 
+
+  public function getImgSrc( $array, $imgtitle ) {
+    $localmedia = $this->getLocalPath();
+
+    $imgalt = $imgtitle . " Slider";
+
+    $imgsrc = array();
+     foreach ($array as $key => $file) {
+         $sliderurl = $localmedia . $file;
+           $imgsrc[] = '<img src="' . $sliderurl . '" title="' . $imgtitle . '" alt="' . $imgalt . '">';
+       }//feach
+
+    return $imgsrc;
+  }
 
   public function countItUp($it) {
       return count($it);

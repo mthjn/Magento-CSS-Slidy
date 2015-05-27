@@ -1,8 +1,6 @@
 <?php
-/**
-Usage
-{{block type=""}}
-**/
+// Usage: {{block type="CSSSlidy_Slider/render"}}
+
 class CSSSlidy_Slider_Block_Render extends Mage_Core_Block_Template {
 
   public function _toHtml() {
@@ -13,29 +11,16 @@ Images
     $mediadir = $ModelGetimages->defineMediaDir();
      $array = $ModelGetimages->getDirFiles($mediadir);
       $array_count = $ModelGetimages->countItUp($array);
-    $localmedia = $ModelGetimages->getLocalPath();
-    $imgtitle = $this->getLayout()->getBlock('head')->getTitle();
-     $imgalt = $imgtitle . " Slider";
 
-      $imgsrc = array();
-       foreach ($array as $key => $file) {
-        $sliderurl = $localmedia . $file;
-          $imgsrc[] = '<img src="' . $sliderurl . '" title="' . $imgtitle . '" alt="' . $imgalt . '">';
-        }//feach
-
+   $imgtitle = $this->getLayout()->getBlock('head')->getTitle();
+    $imgsrc = array();
+     $imgsrc = $ModelGetimages->getImgSrc( $array, $imgtitle );
 /**
 captions
 **/
    $HelperGetCaptions = Mage::helper('CSSSlidy_Slider/Data');
     $divcap = $HelperGetCaptions->getCaptions($array_count);
-//print_r($imgsrc);
-//print_r($divcap);
-/**
-                what if one empty
-                Adds CSS3 Hover transitions for text
-**/
-/**Template Renderer**/
-     ?>
+   ?>
       <div id="slidy-container">
          <figure id="slidy">
           <?php
@@ -53,5 +38,5 @@ captions
            ?>
            </figure>
        </div>
-  <?php }//fn
+  <?php }//toHtml
 }//class
