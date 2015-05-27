@@ -8,6 +8,8 @@
 + Display slider as a block in CMS pages  
     {{block type="CSSSlidy_Slider/render"}}
   
+If you cannot save config setting (Error 404) Log out and in again and flush Magento cache.  
+  
 ###Function  
   
 **All images in media/cssslidy/slider will be automatically added into slider**  
