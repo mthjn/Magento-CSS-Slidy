@@ -22,6 +22,7 @@ Flush this as a custom block in CMS .. **and**?
 
   
 ###To be done  
++ FireFox - empty bgox when no text?
 + integration? only {{block}}?  
 + Pictures via admin backend  
 
