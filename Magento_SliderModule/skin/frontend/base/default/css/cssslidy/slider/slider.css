@@ -1,6 +1,6 @@
 
 /*transition: left 2s cubic-bezier(0.77, 0, 0.175, 1);*/
-
+/* BASIC */
 #slidy-container {
 position:relative;
 width: 100%;
@@ -31,8 +31,14 @@ transition: all 2s ease;
   background: rgba(255,255,255,0.2);
   transition: background-color 4s ease;
 }
-
-
+/* CAPTION FONT FORMATTING */
+.down {
+  font-size: 80%;
+}
+.up {
+  font-size: 130%;
+}
+/*RESPONSIVE*/
 @media(max-width:650px) {
   #cssslidy-caption1,
   #cssslidy-caption2,
