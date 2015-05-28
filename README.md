@@ -40,5 +40,5 @@ Flush this as a custom block in CMS .. **and**?
 ###Based on / Links  
 
 [CSSSlidy](http://dudleystorey.github.io/CSSslidy/)  
-
+[Inner JS originally published here](http://demosthenes.info/blog/838/CSSslidy-An-Auto-Generated-Responsive-CSS3-Image-Slider)  
 [Docs Magento](http://docs.magentocommerce.com/)  
