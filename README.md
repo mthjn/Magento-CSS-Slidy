@@ -1,13 +1,18 @@
 
 ###Install  
+  
+**So far tested on Magento ver. 1.9.1.1 only.**
+   
 + Copy the files into your Magento file system  
 + Load any amount of images **of the same size** into  
     media/cssslidy/slider  
 + Add text for sliders if needed: System - Configuration - CSSSlidy
 + Change CSS for slider and captions in skin css, if needed  
 + Display slider as a block in CMS pages  
-    {{block type="CSSSlidy_Slider/render"}}
-  
+      
+    {{block type="CSSSlidy_Slider/render"}}  
+     
+**Troubleshooting**  
 If you cannot save config setting (Error 404) Log out and in again and flush Magento cache.  
   
 ###Function  
@@ -27,6 +32,7 @@ Flush this as a custom block in CMS .. **and**?
 + FireFox - empty bgox when no text?
 + integration? only {{block}}?  
 + Pictures via admin backend  
++ Test it
 
 ###Log  
 + Image captions
